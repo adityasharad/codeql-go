@@ -8,7 +8,7 @@
  */
 
 import go
-import DataFlow::PartialPathGraph
+import DataFlow::PathGraph
 
 /**
  * A function parameter of type `* ...Request`.
