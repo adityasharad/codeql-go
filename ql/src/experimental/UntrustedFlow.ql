@@ -15,7 +15,7 @@ import DataFlow::PathGraph
  * These are likely to be protobuf message requests to an external-facing API,
  * and so are considered untrusted input.
  */
-class RequestParameter extends DataFlow::ParameterNode, UntrustedFlowSource {
+class RequestParameter extends DataFlow::ParameterNode, UntrustedFlowSource::Range {
   RequestParameter() { this.getType().(PointerType).getBaseType().getName().matches("%Request") }
 }
 
